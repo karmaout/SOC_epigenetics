@@ -29,7 +29,8 @@ All R scripts are written to be sourced from an R session; they assume that the 
 
 
 ## Analysis schematic
-0x Multiome data (RNA + ATAC)
+```
+10x Multiome data (RNA + ATAC)
 │
 ├── Brain regions
 │ ├── BLA
@@ -72,6 +73,8 @@ All R scripts are written to be sourced from an R session; they assume that the 
 │ ├── Motif annotations
 │ └── RNA–ATAC correlation tables
 └── Figures and tables for main results
+```
+
 
 **Note:** FRiP is used here as a *primary measure of chromatin accessibility* and contributes directly to main figures, rather than serving solely as a quality control metric.
 
