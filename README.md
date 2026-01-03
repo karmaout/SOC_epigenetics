@@ -36,9 +36,5 @@ This script orchestrates a multi‑step pipeline for each brain region:
 4. **Compute FRiP metrics:** `calc_FRiP_df` calculates the fraction of reads in peaks (FRiP) for each cell and also computes a transformed `FRiP2` metric:contentReference[oaicite:14]{index=14}.  `calc_pseudobulk_FRiP` then aggregates FRiP2 values by library and behaviour group to produce pseudo‑bulk summaries:contentReference[oaicite:15]{index=15}.
 5. **Export results:** For each region, the script saves RDS objects, writes per‑cell and pseudo‑bulk FRiP data to Excel sheets, and finally collects results across regions into a combined workbook:contentReference[oaicite:16]{index=16}.
 
-To run the pipeline for BLA and PC, load your Seurat objects (`BLA` and `PC`) into your R environment, ensure the required metadata columns (`seurat_clusters`, `behavior_group`, `IEG1`, `library_id`, `fragment_counts`) are present, and then:
 
-```r
-source("SOC_VGLUT1_ATAC.R")
-
-
+  
