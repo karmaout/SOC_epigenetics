@@ -80,10 +80,6 @@ All R scripts are written to be sourced from an R session; they assume that the 
 
 ---
 
-## `SOC_VGLUT1_ATAC.R`
-
-This script orchestrates a multi-step multiome analysis pipeline for each brain region (BLA and PC), focusing on VGLUT1-positive excitatory neurons and their activity-dependent chromatin and transcriptional regulation.
-
 ### Pipeline steps
 
 1. **Subset VGLUT1 neurons**  
