@@ -6,7 +6,7 @@ from BLA and PC during second-order conditioning.
 ## Data
 - 10x Genomics Multiome
 - Regions: BLA, PC
-- Conditions: U_E, P_E, U_R, P_R
+- Conditions: U_A, P_A, U_R, P_R
 
 ## Pipeline
 1. Subset VGLUT1 neurons
