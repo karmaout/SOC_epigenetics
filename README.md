@@ -1,4 +1,4 @@
-# SOC Multiome Analysis
+# SOC Epigenetics Analysis
 
 This repository contains code and shell scripts to reproduce the multi‑omic analysis of single‑nucleus RNA‑sequencing (snRNA‑seq) and ATAC‑sequencing (snATAC‑seq) data from the basolateral amygdala (BLA) and piriform cortex (PC) during a second‑order conditioning (SOC) paradigm.  The raw data are not included; instead, this repository focuses on processing and analysis pipelines designed to run on 10x Genomics Multiome data.
 
