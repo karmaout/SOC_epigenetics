@@ -1,11 +1,4 @@
-suppressPackageStartupMessages({
-  library(readr)
-  library(dplyr)
-  library(openxlsx)
-})
 
-## =========================================================
-## 0) Config (repo-relative)
 ## =========================================================
 CFG <- list(
   in_dir  = "data/motifs",          # where hit_*.txt lives (edit as needed)
@@ -133,3 +126,4 @@ write_multi_sheet_xlsx(
 )
 
 message("✅ Wrote Excel: ", out_xlsx_path)
+
