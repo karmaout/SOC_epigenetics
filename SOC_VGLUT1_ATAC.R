@@ -1,24 +1,3 @@
-## =========================================================
-## 0) Setup (NO absolute paths)
-## =========================================================
-library(Seurat)
-library(Signac)
-library(Matrix)
-library(dplyr)
-library(openxlsx)
-library(ggplot2)
-library(ggpubr)
-
-## Optional but recommended for GitHub projects
-## install.packages("here")
-# library(here)
-
-## Define project-level output directory (relative)
-OUT_DIR <- "results/VGLUT1_pipeline"
-dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
-
-
-
 
 ## -----------------------------
 ## Subset VGLUT1
@@ -218,3 +197,4 @@ write_xlsx_multi(
 )
 
 message("✅ Pipeline finished")
+
