@@ -1,20 +1,3 @@
-## =========================================================
-## 0) Packages
-## =========================================================
-suppressPackageStartupMessages({
-  library(Signac)
-  library(Seurat)
-  library(ChIPseeker)
-  library(GenomicFeatures)
-  library(GenomicRanges)
-  library(GenomeInfoDb)
-  library(dplyr)
-  library(tidyr)
-  library(readr)
-  library(stringr)
-  library(ggplot2)
-  library(data.table)
-})
 
 OUT_DIR <- "results/ATAC_peak_annotation"
 dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
@@ -251,3 +234,4 @@ batch_coverage_plots <- function(obj, regions_named,
     ggsave(file.path(out_dir, paste0(prefix, "_", nm, ".pdf")), p, width = 10, height = 7)
   }
 }
+
