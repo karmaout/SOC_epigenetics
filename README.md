@@ -104,8 +104,12 @@ All R scripts are written to be sourced from an R session; they assume that the 
    - Identify transcription factor binding motifs enriched in accessible chromatin  
    - Annotate peaks with motif presence and associated gene symbols  
    - Enable stratification of peaks and genes based on motif occupancy (e.g. AP-1 / Fos-family motifs)
+     
+5. **Footprinting analysis (ATAC)**
+   TFs binding differences are inferred from footprinting analysis, and the bash scripts utilize the LSF scheduler for an IBM HPC
+   Footprinting analysis is performed externally using **TOBIAS**, and the ΔFrootprinting scores of TFs are used for creating the volcano plots.
 
-5. **RNA–ATAC correlation analysis (pseudo-bulk)**  
+7. **RNA–ATAC correlation analysis (pseudo-bulk)**  
    To assess coupling between transcriptional output and chromatin accessibility:
    - RNA expression is summarized as pseudo-bulk CPM per library and behaviour group  
    - ATAC accessibility is aggregated to gene-level CPM based on annotated peaks  
@@ -113,14 +117,9 @@ All R scripts are written to be sourced from an R session; they assume that the 
 
    This analysis identifies genes showing coordinated or divergent regulation between chromatin accessibility and transcription.
 
-6. **FRiP-based chromatin accessibility analysis**  
+8. **FRiP-based chromatin accessibility analysis**  
    - `calc_FRiP_df` computes FRiP and a transformed metric (`FRiP2`) at the single-cell level  
    - `calc_pseudobulk_FRiP` aggregates FRiP2 at the library × condition level  
 
    FRiP is treated as a biologically interpretable measure of chromatin accessibility and is used directly in downstream analyses and figures.
 
-7. **Export results**  
-   For each brain region, the pipeline:
-   - Saves processed Seurat objects (VGLUT1 and VGLUT1 Fos⁺) as RDS files  
-   - Exports FRiP metrics, motif annotations, and RNA–ATAC correlation results to Excel workbooks  
-   - Merges results across regions into combined output files for downstream statistics and figure generation
