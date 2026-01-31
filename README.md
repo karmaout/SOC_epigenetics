@@ -53,12 +53,14 @@ All R scripts are written to be sourced from an R session; they assume that the 
 │ │ └── Pseudo-bulk FRiP (library × condition)
 │ ├── Motif discovery (HOMER)
 │ ├── Motif–peak–gene annotation
+| └── Footprinting analysis
 │ └── Gene-level ATAC CPM
-│
+|
 ├── Gene expression (RNA)
 │ ├── CPM calculation
 │ └── Gene-level pseudo-bulk (library × condition)
-│
+│ 
+|
 ├── RNA–ATAC integration
 │ ├── Merge RNA & ATAC gene-level CPM
 │ ├── Correlation analysis
