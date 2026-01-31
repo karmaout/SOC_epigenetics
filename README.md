@@ -106,8 +106,9 @@ All R scripts are written to be sourced from an R session; they assume that the 
    - Enable stratification of peaks and genes based on motif occupancy (e.g. AP-1 / Fos-family motifs)
      
 5. **Footprinting analysis (ATAC)**
-   TFs binding differences are inferred from footprinting analysis, and the bash scripts utilize the LSF scheduler for an IBM HPC
-   Footprinting analysis is performed externally using **TOBIAS**, and the ΔFrootprinting scores of TFs are used for creating the volcano plots.
+   TFs binding differences are inferred from footprinting analysis, and the bash scripts utilize the LSF scheduler for an IBM HPC.
+   - Footprinting analysis is performed externally using **TOBIAS** framework
+   - ΔFrootprinting scores of TFs are used for creating the volcano plots
 
 7. **RNA–ATAC correlation analysis (pseudo-bulk)**  
    To assess coupling between transcriptional output and chromatin accessibility:
